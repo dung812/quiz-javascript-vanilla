@@ -75,8 +75,6 @@ function renderQA(index) {
             userScore++;
             e.currentTarget.classList.add("correct");
             e.currentTarget.insertAdjacentHTML("beforeend", correctIcon);
-            console.log("Correct Answer");
-            console.log("Your correct answers = " + userScore);
     
         }
         else {
@@ -89,7 +87,6 @@ function renderQA(index) {
                 if (item.firstElementChild.textContent == correcAns) {
                     item.classList.add("correct");
                     item.insertAdjacentHTML("beforeend", correctIcon);
-                    console.log("Auto selected correct answer.");
                 }
             })
         }
