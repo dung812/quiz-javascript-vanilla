@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="build/tailwind.css" />
+    <link rel="stylesheet" href="assets/css/app.css">
+  </head>
+  <body class="font-main h-screen flex justify-center items-center bg-blue-600 px-4">
+    <div class="container bg-white w-full md:w-1/2 lg:w-2/6 rounded-sm shadow-md">
+      <!-- Quiz Box -->
+      <div class="" id="quiz_box">
+        <div class="pt-4 text-center">
+            <h2 class="font-bold">Awesome Quiz Application</h2>
+        </div>
+        <progress class="m-0 p-0" id="process-ques" min="0" max="5" value="5"></progress>
+        <div class="px-8 py-4">
+          <div id="que_text">
+            <!-- Here I've inserted question from JavaScript -->
+            <!-- <h1 class="text-lg">Question</h1> -->
+          </div>
+            
+          <div id="option_list">
+            <!-- Here I've inserted options from JavaScript -->
+            <!-- <div class="options" id="opt1">
+              <p>op 1</p>
+              <div class="text-2xl absolute right-3"><i class="uil uil-check-circle"></i></div>
+            </div>
+            <div class="options" id="opt2">
+                <p>op 2</p>
+            </div>
+            <div class="options" id="opt3">
+                <p>op 3</p>
+            </div>
+            <div class="options" id="opt4">
+                <p>op 4</p>
+            </div> -->
+          </div>
+        </div>
+        <div class="px-8 py-5 text-sm flex justify-between items-center border-t border-gray-300 relative">
+            
+            <div id="number_ques">
+              <!-- <p>1 of 5 questions</p> -->
+            </div>
+            <button class="p-2 inline-block bg-blue-600 rounded-sm text-white hover:opacity-75 absolute right-8 hidden" id="btn_next">Next Que</button>
+        </div>
+      </div>
+
+      <!-- Result Box -->
+      <div class="hidden text-center px-8 py-6" id="result_box">
+        <h1 class="text-lg font-bold">You've completed the Quiz!</h1>
+        <div class="text-lg mt-1" id="score"></div>
+        <div class="inline-block mt-2 p-3 text-lg bg-blue-600 w-full color text-white rounded-sm hover:opacity-80 cursor-pointer" id="btn_restart">Restart</div>
+      </div>
+    </div>
+
+    <script src="assets/js/questions.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
